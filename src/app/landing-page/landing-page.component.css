@@ -1,0 +1,479 @@
+/* General Styles */
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.jumbotron {
+  position: relative;
+}
+
+h1, .lead {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-item{
+  padding-left: 4ch;
+  font-family: 'Times New Roman', serif;
+  font-size: 19px;
+}
+/* Tablet and Mobile Adjustments */
+@media (max-width: 992px) {
+  .navbar-brand .logo {
+    height: 40px;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .jumbotron {
+    height: 70vh; /* Adjust for smaller screens */
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-brand .logo {
+    height: 30px;
+  }
+
+  .jumbotron {
+    height: 60vh;
+  }
+
+  .display-4 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 0.9rem;
+  }
+}
+
+/* About Us Section Styling */
+.about-us-section {
+  /* background-color: #f9f4ec; */
+  color: #333;
+}
+
+.service-icon {
+  font-size: 1.5rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-left: 15ch;
+  margin-right: 16ch;
+}
+
+h4 {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+p {
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+.img-fluid {
+  border-radius: 0.5rem;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+@media (max-width: 768px) {
+  .about-us-section {
+    padding: 1rem;
+  }
+
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-icon {
+    margin-right: 0;
+    margin-bottom: 0.25rem; /* Adjust margin for mobile view */
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+
+}
+
+.section-1sttitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(110, 101, 45, 0.925);
+  letter-spacing: 7px
+}
+
+/* Product Section Styling */
+.products-section {
+  /* background-color: #f9f4ec; */
+  color: #666;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-card img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.product-card a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #666;
+}
+
+.product-card a i {
+  margin-left: 0.5rem;
+}
+
+/* Adjustments for Responsiveness */
+@media (max-width: 768px) {
+  .product-card {
+    padding: 1rem;
+  }
+
+  .product-card h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Service Item Styling */
+.service-item {
+  padding: 0.5rem;
+}
+
+.about1st{
+  margin-left: 12ch;
+  margin-right: 12ch;
+}
+
+.service-text{
+  margin-left: 1ch;
+}
+
+.service-text h4 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.prehed-small{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(141, 143, 143);
+}
+
+.service-text p {
+  margin: 1ch;
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+
+
+.custom-img {
+  height: 33ch;
+  width: 100%; /* Full width within its column */
+  object-fit: cover; /* Keeps the image proportionate */
+}
+
+/* For mobile, adjust sizes */
+@media (max-width: 767.98px) {
+  .custom-img {
+    height: auto; /* Let height adjust automatically on small screens */
+    width: 100%;  /* Make sure it takes full width on small screens */
+  }
+}
+
+.textonimg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+  margin-top: 10ch;
+}
+
+/* Individual Stat Banner */
+.stat-banner {
+  width: 320px;
+  height: 100px;
+  background: rgba(189, 186, 186, 0.634); /* Semi-transparent white background */
+  border: 1px solid rgba(148, 144, 144, 0.3); /* Light border */
+  border-radius: 10px;
+  /* text-align: center; */
+  padding: 25px;
+  margin: 10px;
+  display: flex;
+  flex: 1 1 150px;
+  flex-direction: column;
+  justify-content: center;
+  color: white; /* Text color set to white */
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Light white shadow for depth */
+  transition: transform 0.3s ease-in-out;
+}
+
+.stat-banner:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  background: rgba(211, 205, 205, 0.534);
+}
+
+.stat-banner p{
+  color: white;
+  margin-top: -1ch;
+}
+
+ /* Style for the image container */
+ .custom-prdimg-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Initially hide the gradient overlay */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(36, 33, 33, 0.8), rgba(189, 186, 186, 0)); /* Gradient background */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.5s ease;
+  z-index: 1; /* Ensure it covers the image */
+}
+
+/* On hover, display the gradient overlay */
+.custom-prdimg-container:hover .image-overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+/* Style for the images */
+.custom-prdimg {
+  width: 100%;
+  height: 40ch;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+/* Zoom effect on hover */
+.custom-prdimg-container:hover .custom-prdimg {
+  transform: scale(1.1);
+}
+
+/* Text overlay */
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  padding: 10px;
+  font-size: 32px;
+  text-align: left;
+  transition: transform 0.5s ease, font-size 0.5s ease;
+  transform: translateY(0); /* Default position */
+  z-index: 2;
+}
+
+/* Hover effect for text */
+.custom-prdimg-container:hover .overlay-text {
+  transform: translateY(-25px); /* Slide up effect */
+  font-size: 45px; /* Increase font size on hover */
+  /* margin-bottom: 2ch; */
+}
+
+.testmonal {
+  background: url('src/assets/services-right-dec.png') no-repeat center center/cover;
+   width: 100vw; /* Full viewport width */
+   height: 55ch; /* Full viewport height */
+   background-size: cover; /* Ensures the image covers the entire container */
+   overflow: hidden; /* Ensures no scroll bars appear */
+}
+
+.footer {
+   background: url('src/assets/21337763_6464280.jpg') no-repeat center center/cover;
+    backdrop-filter: blur(2px);
+    width: 100vw; /* Full viewport width */
+    height: 45ch; /* Full viewport height */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-attachment: fixed; /* Keeps the background fixed as the user scrolls */
+    overflow: hidden; /* Ensures no scroll bars appear */
+}
+
+.foottext h4{
+  font-size: 25px;
+  color: white;
+}
+.foottext p{
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(202, 196, 196);
+  margin-top: -1ch;
+}
+
+
+
+.social-icons {
+  display: flex; /* Flexbox to align icons in one line */
+   /* Center the icons horizontally */
+  gap: 15px; /* Add space between the icons */
+}
+
+.social-icons i {
+  font-size: 20px; /* Adjust the size of the icons */
+  color: rgb(255, 255, 255); /* Change the icon color */
+  padding: 10px; /* Add padding inside the icons */
+  background: rgba(189, 186, 186, 0.634); /* Semi-transparent white background */
+  border: 1px solid rgba(148, 144, 144, 0.3); /* Light border */
+  border-radius: 50%; /* Make the background circular */
+}
+
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  animation: marquee 7s linear infinite;
+}
+
+.marquee-img {
+  width: 130px; /* Reduced size of images */
+  height: 60;
+  margin-right: 20px; /* Spacing between images */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* schrolling */
+.scrolling-container {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Full width of the container */
+  border: 0,5px solid #ddd; /* Optional: Add a border */
+  border-radius: 0.5rem;
+  overflow: hidden; /* Hide the overflowed content */
+  box-sizing: border-box;
+  padding: 5px; /* Optional: Padding inside the container */
+  margin-top: 10ch;
+  margin-bottom: 20ch;
+}
+
+.static-text {
+  font-weight: bold; /* Make the text bold */
+  color: rgb(128, 126, 126);
+  white-space: nowrap;
+  margin-right: 80px; /* Space between static and scrolling text */
+  font-size: 40px;
+}
+
+.scrolling-text {
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1; /* Make scrolling text take up remaining space */
+  border-radius: 0.5rem;
+}
+
+.testimon-card {
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  /* margin-bottom: 1.5rem; */
+  background-color: white;
+   height: 45ch;
+   margin-top: 5ch;
+   margin-bottom: 5ch;
+   transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+/* testimonials.component.css */
+.testimon-card.ng-leave,
+.testimon-card.ng-enter {
+  opacity: 0;
+}
+
+
+

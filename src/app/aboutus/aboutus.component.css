@@ -1,0 +1,339 @@
+.topimg {
+  background: url('src/assets/design-team-busy-working-talking-concept.jpg') no-repeat bottom center/cover;
+   backdrop-filter: blur(5px);
+   width: 100vw; /* Full viewport width */
+   height: 30ch; /* Full viewport height */
+   background-size: cover; /* Ensures the image covers the entire container */
+   overflow: hidden; /* Ensures no scroll bars appear */
+  /* z-index: 2; */
+}
+
+.conimg {
+  background: url('src/assets/21337763_6464280.jpg') no-repeat   center/cover;
+   backdrop-filter: blur(5px);
+   width: 100vw; /* Full viewport width */
+   height: 45ch; /* Full viewport height */
+   background-size: cover; /* Ensures the image covers the entire container */
+   overflow: hidden; /* Ensures no scroll bars appear */
+  /* z-index: 2; */
+}
+
+/* Adding the gradient */
+.topimg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Fading black */
+  z-index: 1;
+}
+
+.topimg h3 {
+  position: relative;
+  z-index: 2; /* Ensure the text stays above the gradient */
+  margin: 0;
+  padding: 20px;
+  padding-left: 4ch;
+  font-family: 'Times New Roman', serif;
+  font-size: 60px;
+  color: white;
+  justify-content: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin-top: 4ch;
+}
+
+.about-contact{
+  background: url('src/assets/2150692407.jpg') no-repeat center center/cover;
+   backdrop-filter: blur(5px);
+   width: 83vw;
+   height: 30ch; /* Full viewport height */
+   background-size: cover; /* Ensures the image covers the entire container */
+   overflow: hidden; /* Ensures no scroll bars appear */
+   border-radius: 12px;
+   margin-bottom: 5ch;
+}
+.about-contact h4{
+  position: relative;
+  z-index: 2; /* Ensure the text stays above the gradient */
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  justify-content: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin-top: 3ch;
+}
+
+.about-contact p{
+  position: relative;
+  z-index: 2; /* Ensure the text stays above the gradient */
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  width: 100%;
+  margin-top: -6ch;
+}
+
+.about-contact button{
+  position: relative;
+  z-index: 2; /* Ensure the text stays above the gradient */
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgb(78, 48, 9);
+  border-color: rgb(78, 48, 9);
+  width: 150px;
+  margin-left: 28ch;
+  color: white;
+}
+
+/* Adding the gradient */
+.about-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(204, 195, 183, 0.9), rgba(0, 0, 0, 0.2)); /* Fading black */
+  z-index: 1;
+}
+
+
+.about1st{
+  margin-left: 12ch;
+  margin-right: 12ch;
+}
+
+.custom-img1 {
+  height: 55ch;
+  width: 100%; /* Full width within its column */
+  object-fit: cover; /* Keeps the image proportionate */
+}
+
+.content{
+  margin-top: 10ch;
+  margin-bottom: 10ch;
+}
+
+.content h4{
+  font-family: 'Times New Roman', serif;
+  font-size: 40px;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.content p{
+  padding: 10px;
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 400;
+}
+
+
+/* Custom style for images and text to resize */
+.service-item img.custom-img {
+  max-width: 80px; /* Control max size for desktop */
+  width: 100%; /* Make it responsive */
+  height: auto;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.service-text {
+  flex: 1; /* Text takes the remaining space */
+}
+
+
+
+.img-fluid {
+  border-radius: 0.5rem;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  height:60px;
+}
+
+.aim2 {
+  margin-top: 10px; /* Add space above the entire row if needed */
+  margin-bottom: 30px; /* Add space above the entire row if needed */
+}
+
+.aim3 {
+  margin-top: 30px; /* Add space above the entire row if needed */
+  margin-bottom: 30px; /* Add space above the entire row if needed */
+}
+.aim {
+  /* background-color: #dbd9d9; */
+  padding: 20px;
+  border-radius: 5px; /* Optional: Rounds the corners of the tabs */
+  margin-bottom: 20px; /* Space between the two tabs */
+}
+
+.aim span {
+  font-size: 30px;
+   font-weight: 500;
+   font-family: 'Times New Roman', serif;
+   text-align: justify;
+}
+
+.aim p {
+   text-align: justify;
+
+}
+
+.aim3 span {
+  font-size: 40px;
+   font-weight: 500;
+   font-family: 'Times New Roman', serif;
+   text-align: justify;
+}
+
+.aim3 p {
+  font-size: 18px;
+   text-align: justify;
+   color: rgb(230, 225, 225);
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.about-us-section {
+  margin-top: 10ch;
+  margin-bottom: 5ch;
+}
+
+.whoimg {
+  width: 100%;
+  height: 310px;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .topimg h3 {
+    position: relative;
+    z-index: 2; /* Ensure the text stays above the gradient */
+    margin: 0;
+    padding: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-top: 5ch;
+  }
+
+  .about1st{
+    margin-left: 3ch;
+    margin-right: 3ch;
+  }
+
+  .content{
+    margin-top: 3ch;
+    margin-bottom: 3ch;
+  }
+
+  .custom-img1 {
+    height: 55ch;
+    width: 100%; /* Full width within its column */
+    object-fit: cover; /* Keeps the image proportionate */
+    margin-bottom: 4ch;
+    margin-top: 6ch;
+  }
+
+  .about-contact{
+    background: url('src/assets/2150692407.jpg') no-repeat center center/cover;
+     backdrop-filter: blur(5px);
+     width: 90vw;
+     height: 30ch; /* Full viewport height */
+     background-size: cover; /* Ensures the image covers the entire container */
+     overflow: hidden; /* Ensures no scroll bars appear */
+     border-radius: 12px;
+     margin-bottom: 5ch;
+  }
+
+  .about-contact h4{
+    font-size: 30px;
+    text-align: center;
+    padding: 3ch;
+  }
+
+  .about-contact p{
+    position: relative;
+    z-index: 2; /* Ensure the text stays above the gradient */
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+    width: 100%;
+    margin-top: -9ch;
+    padding: 3ch;
+  }
+
+  .conimg {
+    height: 100ch;
+  }
+
+  .about-us-section {
+    margin-bottom: 1ch;
+    text-align: center;
+  }
+
+  .img-fluid {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin-left: 5ch;
+  }
+
+  .aim3 {
+    margin-top: 10px; /* Add space above the entire row if needed */
+    margin-bottom: 20px; /* Add space above the entire row if needed */
+  }
+
+  .service-item {
+    padding: 0.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-contact button{
+    display:none;
+  }
+
+  .service-item img.custom-img {
+    max-width: 50px; /* Smaller images for mobile */
+  }
+
+  .service-text .prehed-bold {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .service-text .prehed-small {
+    font-size: 0.85rem; /* Adjust font size for smaller screens */
+  }
+
+}
+
+

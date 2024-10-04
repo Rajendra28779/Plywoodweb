@@ -1,0 +1,21 @@
+.about1st{
+  margin-left: 12ch;
+  margin-right: 12ch;
+}
+
+.about1st h2{
+  font-family: 'Times New Roman', serif;
+  margin-top: 3ch;
+  font-weight: 500;
+  color: #855a21;
+}
+
+.about1st h4{
+  color: #855a21;
+}
+@media (max-width: 768px) {
+  .about1st{
+    margin-left: 3ch;
+    margin-right: 3ch;
+  }
+}

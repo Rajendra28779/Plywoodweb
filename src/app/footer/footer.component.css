@@ -1,0 +1,42 @@
+.footer {
+  background: url('src/assets/21337763_6464280.jpg') no-repeat center center/cover;
+   backdrop-filter: blur(2px);
+   width: 100vw; /* Full viewport width */
+   height: 45ch; /* Full viewport height */
+   background-size: cover; /* Ensures the image covers the entire container */
+   background-attachment: fixed; /* Keeps the background fixed as the user scrolls */
+   overflow: hidden; /* Ensures no scroll bars appear */
+}
+
+.foottext h4{
+ font-size: 25px;
+ color: white;
+}
+.foottext p{
+ font-weight: 500;
+ font-size: 16px;
+ color: rgb(202, 196, 196);
+ margin-top: -1ch;
+}
+
+
+
+.social-icons {
+ display: flex; /* Flexbox to align icons in one line */
+  /* Center the icons horizontally */
+ gap: 15px; /* Add space between the icons */
+}
+
+.social-icons i {
+ font-size: 20px; /* Adjust the size of the icons */
+ color: rgb(255, 255, 255); /* Change the icon color */
+ padding: 10px; /* Add padding inside the icons */
+ background: rgba(189, 186, 186, 0.634); /* Semi-transparent white background */
+ border: 1px solid rgba(148, 144, 144, 0.3); /* Light border */
+ border-radius: 50%; /* Make the background circular */
+}
+
+.about1st{
+  margin-left: 12ch;
+  margin-right: 12ch;
+}

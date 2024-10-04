@@ -1,0 +1,206 @@
+<div>
+  <div class="topimg">
+    <h3>Plywood Dealership</h3>
+  </div>
+
+  <div class="about1st">
+    <div class="row content">
+      <div class="col-lg-4 col-md-3 col-sm-12 ">
+        <img src="assets/2150692407.jpg" alt="Interior Design" class=" custom-img1">
+      </div>
+      <div class="col-lg-8 col-md-9 col-sm-12">
+        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, quod.</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti molestiae placeat possimus quaerat rem, quo sapiente, praesentium iusto excepturi numquam accusantium laborum ratione et rerum.</p>
+      </div>
+    </div>
+
+    <div class="about-us-section" style="margin-top: 6ch;">
+      <div class="row text-center">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/Weather Proof.svg" alt="Interior Design" class="img-fluid" >
+            <p >Weather Proof</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/Long-Term Warranty.svg" alt="Interior Design" class="img-fluid">
+            <p >Long-Term Warrenty</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/proof.svg" alt="Interior Design" class="img-fluid">
+            <p >Borer & Fungus Proof</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/Certified Quality.svg" alt="Interior Design" class="img-fluid">
+            <p >Certifire Quality</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center explore">
+      <p>Explore the syernth and beauty of </p>
+      <p style="margin-top: -1ch;">Our plywwod collection</p>
+
+      <div class="button-container">
+        <button
+          class="styled-button me-3"
+          [ngClass]="{'selected': selectedButton === 1}"
+          (click)="selectButton(1)">
+          <i class="fa-solid fa-house-circle-check me-2"></i>All
+        </button>
+
+        <button
+          class="styled-button me-3"
+          [ngClass]="{'selected': selectedButton === 2}"
+          (click)="selectButton(2)">
+          <i class="fa-solid fa-award"></i> Best Saller
+        </button>
+
+        <button
+          class="styled-button me-3"
+          [ngClass]="{'selected': selectedButton === 3}"
+          (click)="selectButton(3)">
+          <i class="fa-solid fa-gifts"></i> New
+        </button>
+
+        <button
+          class="styled-button"
+          [ngClass]="{'selected': selectedButton === 4}"
+          (click)="selectButton(4)">
+          <i class="fa-solid fa-upload"></i> UpComming
+        </button>
+      </div>
+
+      <div class=" mt-3" *ngIf="selectedButton==1">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-6">
+                <img src="assets/2150692407.jpg" alt="Interior Design" class=" custom-img">
+              </div>
+              <div class="col-6">
+                <img src="assets/modern-minimalist-office.jpg" alt="Interior Design" class=" custom-img">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <img src="assets/2151780716.jpg" alt="Interior Design" class=" custom-img">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <img src="assets/2151780716.jpg" alt="Interior Design" class=" custom-img">
+          </div>
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-6">
+                <img src="assets/2150692407.jpg" alt="Interior Design" class=" custom-img">
+              </div>
+              <div class="col-6">
+                <img src="assets/modern-minimalist-office.jpg" alt="Interior Design" class=" custom-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" mt-3" *ngIf="selectedButton==2">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-6">
+                <img src="assets/Frame 48096216.png" alt="Interior Design" class=" custom-img">
+              </div>
+              <div class="col-6">
+                <img src="assets/Frame 4809621733.png" alt="Interior Design" class=" custom-img">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <img src="assets/Frame 480962255.png" alt="Interior Design" class=" custom-img">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <img src="assets/Frame 48096219.png" alt="Interior Design" class=" custom-img">
+          </div>
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-6">
+                <img src="assets/steel.jpg" alt="Interior Design" class=" custom-img">
+              </div>
+              <div class="col-6">
+                <img src="assets/Frame 48096216.png" alt="Interior Design" class=" custom-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" mt-3" *ngIf="selectedButton==3">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-6">
+                <img src="assets/hardware.jfif" alt="Interior Design" class=" custom-img">
+              </div>
+              <div class="col-6">
+                <img src="assets/image 26.png" alt="Interior Design" class=" custom-img">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <img src="assets/Frame 48096217.png" alt="Interior Design" class=" custom-img">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <img src="assets/Frame 48096217.png" alt="Interior Design" class=" custom-img">
+          </div>
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-6">
+                <img src="assets/Frame 48096218.png" alt="Interior Design" class=" custom-img">
+              </div>
+              <div class="col-6">
+                <img src="assets/Hardware.png" alt="Interior Design" class=" custom-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" mt-3" *ngIf="selectedButton==4">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-6">
+                <img src="assets/2150692407.jpg" alt="Interior Design" class=" custom-img">
+              </div>
+              <div class="col-6">
+                <img src="assets/modern-minimalist-office.jpg" alt="Interior Design" class=" custom-img">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <img src="assets/2151780716.jpg" alt="Interior Design" class=" custom-img">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <img src="assets/2151780716.jpg" alt="Interior Design" class=" custom-img">
+          </div>
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-6">
+                <img src="assets/2150692407.jpg" alt="Interior Design" class=" custom-img">
+              </div>
+              <div class="col-6">
+                <img src="assets/modern-minimalist-office.jpg" alt="Interior Design" class=" custom-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

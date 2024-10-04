@@ -1,86 +1,14 @@
-/* General Styles */
-.navbar {
-  padding: 1rem 2rem;
+.s1sttab{
+  margin-left: 12ch;
 }
 
-.navbar-brand {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-brand .logo {
-  height: 50px;
-  margin-right: 10px;
-}
-
-.brand-name {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.jumbotron {
-  position: relative;
-}
-
-h1, .lead {
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-.nav-item{
-  padding-left: 4ch;
-  font-family: 'Times New Roman', serif;
-  font-size: 19px;
-}
 /* Tablet and Mobile Adjustments */
 @media (max-width: 992px) {
-  .navbar-brand .logo {
-    height: 40px;
-  }
 
-  .brand-name {
-    font-size: 1rem;
-  }
-
-  .navbar-nav {
-    text-align: center;
-  }
-
-  .jumbotron {
-    height: 70vh; /* Adjust for smaller screens */
-  }
-
-  .display-4 {
-    font-size: 2rem;
-  }
-
-  .lead {
-    font-size: 1rem;
+  .s1sttab{
+    margin-left: 2ch;
   }
 }
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0.5rem 1rem;
-  }
-
-  .navbar-brand .logo {
-    height: 30px;
-  }
-
-  .jumbotron {
-    height: 60vh;
-  }
-
-  .display-4 {
-    font-size: 1.5rem;
-  }
-
-  .lead {
-    font-size: 0.9rem;
-  }
-}
-
 /* About Us Section Styling */
 .about-us-section {
   /* background-color: #f9f4ec; */
@@ -123,6 +51,26 @@ p {
 }
 
 @media (max-width: 768px) {
+
+  .testmonal-row {
+    margin-left: 1ch;
+    margin-right: 1ch;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    color: #666;
+    margin-left: 3ch;
+    margin-right: 3ch;
+  }
+
+  .img-fluid {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin-left: 5ch;
+  }
+
   .about-us-section {
     padding: 1rem;
   }
@@ -146,6 +94,12 @@ p {
   }
 
 
+}
+
+@media only screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }
 
 .section-1sttitle {
@@ -209,6 +163,10 @@ p {
   margin-left: 12ch;
   margin-right: 12ch;
 }
+.dealers{
+  margin-left: 12ch;
+  margin-right: 12ch;
+}
 
 .service-text{
   margin-left: 1ch;
@@ -232,6 +190,11 @@ p {
 }
 
 @media (max-width: 768px) {
+  .about1st{
+    margin-left: 3ch;
+    margin-right: 3ch;
+  }
+
   .service-item {
     flex-direction: column;
     text-align: center;
@@ -299,6 +262,34 @@ p {
   margin-top: -1ch;
 }
 
+.stat-banner1{
+  /* height: 100px; */
+  background: rgba(240, 196, 171, 0.634); /* Semi-transparent white background */
+  border: 1px solid rgba(148, 144, 144, 0.3); /* Light border */
+  border-radius: 10px;
+  /* text-align: center; */
+  padding: 15px;
+  display: flex;
+  flex: 1 1 150px;
+  flex-direction: column;
+  color: rgb(85, 77, 77); /* Text color set to white */
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Light white shadow for depth */
+  transition: transform 0.3s ease-in-out;
+}
+
+.stat-banner1:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  background: rgba(241, 173, 134, 0.634);
+}
+
+.stat-banner1-ion{
+  justify-content: center;
+   font-size: 40px;
+   margin-top: 19px;
+   text-align: center;
+   color: rgba(110, 101, 45, 0.925);
+}
+
  /* Style for the image container */
  .custom-prdimg-container {
   position: relative;
@@ -360,50 +351,15 @@ p {
 
 .testmonal {
   background: url('src/assets/services-right-dec.png') no-repeat center center/cover;
-   width: 100vw; /* Full viewport width */
+   width: 98vw; /* Full viewport width */
    height: 55ch; /* Full viewport height */
    background-size: cover; /* Ensures the image covers the entire container */
    overflow: hidden; /* Ensures no scroll bars appear */
 }
-
-.footer {
-   background: url('src/assets/21337763_6464280.jpg') no-repeat center center/cover;
-    backdrop-filter: blur(2px);
-    width: 100vw; /* Full viewport width */
-    height: 45ch; /* Full viewport height */
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-attachment: fixed; /* Keeps the background fixed as the user scrolls */
-    overflow: hidden; /* Ensures no scroll bars appear */
+.testmonal-row {
+  margin-left: 12ch;
+  margin-right: 6ch;
 }
-
-.foottext h4{
-  font-size: 25px;
-  color: white;
-}
-.foottext p{
-  font-weight: 500;
-  font-size: 16px;
-  color: rgb(202, 196, 196);
-  margin-top: -1ch;
-}
-
-
-
-.social-icons {
-  display: flex; /* Flexbox to align icons in one line */
-   /* Center the icons horizontally */
-  gap: 15px; /* Add space between the icons */
-}
-
-.social-icons i {
-  font-size: 20px; /* Adjust the size of the icons */
-  color: rgb(255, 255, 255); /* Change the icon color */
-  padding: 10px; /* Add padding inside the icons */
-  background: rgba(189, 186, 186, 0.634); /* Semi-transparent white background */
-  border: 1px solid rgba(148, 144, 144, 0.3); /* Light border */
-  border-radius: 50%; /* Make the background circular */
-}
-
 
 .marquee-content {
   display: flex;
@@ -426,6 +382,22 @@ p {
   }
 }
 
+/* Mobile adjustment */
+@media only screen and (max-width: 768px) {
+  .static-text {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .marquee-img {
+    width: 60px;
+    margin-right: 10px;
+  }
+  .scrolling-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 
 /* schrolling */
 .scrolling-container {
@@ -436,9 +408,17 @@ p {
   border-radius: 0.5rem;
   overflow: hidden; /* Hide the overflowed content */
   box-sizing: border-box;
-  padding: 5px; /* Optional: Padding inside the container */
+  padding: 10px; /* Optional: Padding inside the container */
   margin-top: 10ch;
-  margin-bottom: 20ch;
+  margin-bottom: 5ch;
+}
+
+/* Add margin to the left side only on larger screens */
+@media (min-width: 992px) {
+  .scrolling-container {
+      margin-left: 12ch; /* Adjust this value as per your needs */
+      width: 88%;
+  }
 }
 
 .static-text {
@@ -473,6 +453,124 @@ p {
 .testimon-card.ng-leave,
 .testimon-card.ng-enter {
   opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-1sttitle {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .static-testimonial {
+    font-size: 0.875rem;
+  }
+
+  .testimon-card h4 {
+    font-size: 1.5rem;
+  }
+
+  .testimon-card p {
+    font-size: 0.875rem;
+  }
+
+  .testimon-card span {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimon-card {
+    padding: 1rem;
+  }
+
+  .section-1sttitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .static-testimonial {
+    font-size: 0.75rem;
+  }
+
+  .testimon-card h4 {
+    font-size: 1.25rem;
+  }
+
+  .testimon-card p {
+    font-size: 0.75rem;
+  }
+
+  .testimon-card span {
+    font-size: 0.75rem;
+  }
+}
+
+.image-slideshow {
+  position: relative;
+}
+
+.slideshow-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fadeEffect 33s infinite;
+}
+
+.slideshow-image:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.slideshow-image:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.slideshow-image:nth-child(4) {
+  animation-delay: 13s;
+}
+
+.slideshow-image:nth-child(5) {
+  animation-delay: 18s;
+}
+
+.slideshow-image:nth-child(6) {
+  animation-delay: 23s;
+}
+
+.slideshow-image:nth-child(7) {
+  animation-delay: 28s;
+}
+.slideshow-image:nth-child(8) {
+  animation-delay: 33s;
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 
